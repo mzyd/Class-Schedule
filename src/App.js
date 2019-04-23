@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import SiderBar from './App/SideBar.js'
+import Card from './App/Card.js'
+
 
 
 class App extends Component {
@@ -16,7 +18,7 @@ class App extends Component {
         </div>
 
         <div className="content clearfix">
-          
+          <Card />
         </div>
 
         <footer>

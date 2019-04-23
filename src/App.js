@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import SiderBar from './App/SideBar.js'
+
 
 class App extends Component {
   render() {
@@ -8,9 +10,15 @@ class App extends Component {
         <header className="App-header">
           title
         </header>
-        <article>
-          article
-        </article>
+
+        <div className="sider-bar-wrap clearfix">
+          <SiderBar />
+        </div>
+
+        <div className="content clearfix">
+          
+        </div>
+
         <footer>
           footer
         </footer>

@@ -2,8 +2,11 @@ import React, { Component } from 'react';
 import './App.css';
 import SiderBar from './App/SideBar.js'
 import Card from './App/Card.js'
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Router, Route } from "react-router-dom";
 import { createBrowserHistory } from "history";
+import Dialog from './App/Dialog.js'
+
+
 const history = createBrowserHistory()
 
 
@@ -30,6 +33,11 @@ const list = [
 ]
 
 class App extends Component {
+
+  constructor(props) {
+    super(props)
+  }
+
   render() {
     return (
 
@@ -37,7 +45,6 @@ class App extends Component {
 
         <div className="App">
           <header className="App-header">
-            title
           </header>
 
           <div className="sider-bar-wrap clearfix">

@@ -1,0 +1,29 @@
+.dialog-content h2 {
+  position: relative;
+  height: 28px; }
+  .dialog-content h2 .close {
+    padding: 0px;
+    width: 24px;
+    height: 24px;
+    line-height: 22px;
+    font-size: 22px;
+    vertical-align: middle;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    border: 1px solid #ccc; }
+
+.dialog-content div {
+  margin-top: 20px; }
+  .dialog-content div input {
+    padding: 10px;
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #f2f2f2;
+    display: block; }
+  .dialog-content div div button {
+    width: 300px;
+    height: 40px;
+    border: 1px solid #f2f2f2;
+    color: #666; }

@@ -17,6 +17,10 @@ body {
   heigh: 100%;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 #root{
     width: 100%;
     height: 100%;

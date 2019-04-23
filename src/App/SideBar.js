@@ -5,7 +5,28 @@ class SiderBar extends Component {
   render() {
     return (
       <div className="sider-bar">
+        <h3>学员</h3>
         <ul>
+          <li>abc</li>
+          <li>abc</li>
+          <li>abc</li>
+          <li>abc</li>
+          <li>abc</li>
+          <li>abc</li>
+          <li>abc</li>
+          <li>abc</li>
+          <li>abc</li>
+          <li>abc</li>
+          <li>abc</li>
+          <li>abc</li>
+          <li>abc</li>
+          <li>abc</li>
+          <li>abc</li>
+          <li>abc</li>
+          <li>abc</li>
+          <li>abc</li>
+          <li>abc</li>
+          <li>abc</li>
           <li>abc</li>
           <li>abc</li>
           <li>abc</li>

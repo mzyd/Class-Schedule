@@ -4,7 +4,6 @@ import SiderBar from './App/SideBar.js'
 import Card from './App/Card.js'
 import { Router, Route } from "react-router-dom";
 import { createBrowserHistory } from "history";
-import Dialog from './App/Dialog.js'
 
 
 const history = createBrowserHistory()
@@ -13,30 +12,44 @@ const history = createBrowserHistory()
 const list = [
   {
     name: "李放假",
-    already: [
-      {
-        class: 1,
-        date: '2003-3-2',
-      }
-    ]
+    phone: '18115465984',
+    lessons: [],
   },
   {
-    name: "积分就",
-    already: [
-      {
-        class: 1,
-        date: '2003-3-2',
-      }
-    ]
-  }
-
+    name: "雾霾",
+    phone: '17815465984',
+    lessons: [],
+  },
+  {
+    name: "下雨",
+    phone: '13415465984',
+    lessons: [],
+  },
 ]
+
+function random() {
+  let x = Math.floor( Math.random() * 10 )
+  return x > 5 ? { mark: true, date: '2018-3-2' } : { mark: false, date: '' }
+}
+
+function addLesson() {
+  list.forEach(item => {
+    for ( let i = 0; i < 12; i++ ) {
+      let x = random()
+      item.lessons.push(x)
+    }
+  })
+
+}
+
+addLesson()
+
 
 class App extends Component {
 
-  constructor(props) {
-    super(props)
-  }
+  /* constructor(props) {
+   *   super(props)
+   * } */
 
   render() {
     return (

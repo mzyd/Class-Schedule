@@ -7,10 +7,14 @@ import Dialog from './Dialog.js'
 
 
 const NameItem = ({ props }) => {
-  /* console.log( "props : ", props ) */
+  let path = {
+    pathname: `/student/${props.phone}` ,
+    state: props
+  }
+
   return (
     <li>
-      <Link to="/student/:id">{ props.name }</Link>
+      <Link to={ path }>{ props.name }</Link>
     </li>
   )
 }
@@ -44,7 +48,7 @@ class SiderBar extends Component {
         </h3>
         <ul>
           {this.props.list.map(item => (
-            <NameItem props={ item } key={ item.name } />
+            <NameItem props={ item } key={ item.phone } />
           ))}
         </ul>
       </div>

@@ -1,3 +1,4 @@
+$hover-green: #54f782;
 .card {
     height: 100%;
     background-color: #f2f2f2;
@@ -12,9 +13,18 @@
             background-color: white;
             border: 10px solid #f2f2f2;
             height: 100px;
+            span {
+                color: red;
+            }
+        }
+        .already {
+            opacity: 0.5;
+        }
+        .no-yet {
+            // background-color: white;
         }
         td:hover {
-            background-color: #54f782;
+            background-color: $hover-green;
             cursor: pointer;
         }
     }

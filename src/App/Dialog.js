@@ -83,7 +83,23 @@ class Dialog extends React.Component {
       return swal("啧啧!", "信息不完整哈", "error");
     }
     // send request
-    
+    let stu = {
+      name: nameValue,
+      phone: phoneNumber,
+      id: phoneNumber,
+      lessons: [],
+    }
+
+    let arr = []
+    for ( let i = 0; i < 12; i++ ) {
+      arr[i] = {
+        mark: false,
+        date: '',
+      }
+    }
+    stu.lessons = arr
+
+    console.log( "1 ------", stu )
     this.closeModal()
   }
 

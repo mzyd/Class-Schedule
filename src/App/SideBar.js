@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './SiderBar.scss';
+import './SideBar.scss';
 import { Link } from "react-router-dom";
 /* import Card from './Card.js' */
 import Dialog from './Dialog.js'

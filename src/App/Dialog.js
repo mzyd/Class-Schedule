@@ -1,6 +1,8 @@
 import React from 'react';
 import Modal from 'react-modal'
 import './Dialog.scss'
+import swal from 'sweetalert';
+
 
 const customStyles = {
   content : {
@@ -78,11 +80,11 @@ class Dialog extends React.Component {
   handleComplete() {
     const { nameValue, phoneNumber } = this.state
     if (!nameValue || !phoneNumber) {
-
+      return swal("啧啧!", "信息不完整哈", "error");
     }
-
-    console.log( "name: ", nameValue )
-    console.log( "phoneNumber: ", phoneNumber )
+    // send request
+    
+    this.closeModal()
   }
 
   render () {

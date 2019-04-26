@@ -4,7 +4,8 @@ import SiderBar from './App/SideBar.js'
 import Card from './App/Card.js'
 import { Router, Route } from "react-router-dom";
 import { createBrowserHistory } from "history";
-
+import axios from 'axios'
+axios.defaults.baseURL = 'http://localhost:8888';
 
 const history = createBrowserHistory()
 
@@ -50,6 +51,15 @@ class App extends Component {
   /* constructor(props) {
    *   super(props)
    * } */
+
+  componentDidMount() {
+
+    /* axios.get('/')
+     *      .then(res => {
+     *        console.log( "res : ", res )
+     * }) */
+
+  }
 
   render() {
     return (
